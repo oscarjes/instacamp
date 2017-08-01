@@ -9,6 +9,7 @@ if Photo.count > 0
     puts "Your data is safe. Goodbye."
     return
   end
+  
 end
 
 Photo.create!(url: "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/158015/loi_tran_mb4e76.jpg", username: "Loi", likes_count: 7, caption: "Looking good, sir!") 
