@@ -1,2 +1,12 @@
-<h1>PicFeed</h1>
-<p>Your source of artistic pictures of CATS!</p>
+<h1>BachelorFeed</h1>
+<p>Your source of most eligible bachelors in HCMC!</p>
+
+<% @photos.each do |photo| %>
+  <div class="card profile">
+    <div class="card-header"><%= photo.username %></div>
+    <%= image_tag photo.url, class: "card-img-top profile-pic", alt: "photo" %>
+    <div class="card-block">
+      <p class="card-text"><%= photo.caption %></p>
+    </div>
+  </div>
+<% end %>
