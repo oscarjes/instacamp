@@ -14,11 +14,19 @@ div.profile {
   width: 400px;
   margin: auto;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 img.profile-pic {
   height: 350px;
   margin: 10px auto;
   max-width: 100%;
+}
+
+img.avatar{
+  border-radius: 50%;
+  float: left;
+}
+
+div.added{
+  font-style: italic;
 }

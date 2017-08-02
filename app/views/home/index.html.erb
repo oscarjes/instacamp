@@ -3,7 +3,13 @@
 
 <% @photos.each do |photo| %>
   <div class="card profile">
-    <div class="card-header"><%= photo.username %></div>
+    <div class="card-header">
+      <%= image_tag photo.avatar_url, class: "avatar", alt: "photo" %>
+      <%= photo.username %>
+      <div class="added">Added <%= time_ago_in_words(Time.now - 3.hours) %> ago
+      </div>
+    </div>
+    
     <%= image_tag photo.url, class: "card-img-top profile-pic", alt: "photo" %>
     <div class="card-block">
       <p class="card-text"><%= photo.caption %></p>

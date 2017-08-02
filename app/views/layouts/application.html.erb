@@ -20,6 +20,12 @@
       </div>
     </nav>
     <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="alert <%= flasherize(key) %>" style="width: 600px; margin: auto; margin-top: 25px">
+          <%= value %>
+        </div>
+      <% end %>
+
     <%= yield %>
     </div>
   </body>
